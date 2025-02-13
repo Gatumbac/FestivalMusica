@@ -1,0 +1,35 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gatumbac/FestivalMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Gabriel Tumbaco @gatumbac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gatumbac/FestivalMusica/issues"
+  },
+  "homepage": "https://github.com/Gatumbac/FestivalMusica#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.84.0"
+  }
+}
