@@ -1,0 +1,6 @@
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
+
+/*Use y forward -> @use cuando necesito ponerle alias a la hoja de estilos
+@forward -> cuando no necesitas tener el alias, solo la hoja de estilos*/

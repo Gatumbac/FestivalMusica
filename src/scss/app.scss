@@ -1,6 +1,2 @@
-@use 'base/variables' as v;
-body {
-    font-family: v.$fuente_principal;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+@forward 'base';
+@forward 'layout';

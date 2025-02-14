@@ -1,0 +1,47 @@
+@use './base/variables' as v;
+@use 'base/mixins' as m;
+/*anidación en sass*/
+.header {
+    background-color: v.$verde;
+
+    .contenido__header {
+        @include m.tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        padding: 2rem;
+    }
+
+    .header__titulo {
+        color: v.$blanco;
+        text-align: center;
+        @include m.tablet {
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+.navegacion__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include m.tablet {
+        flex-direction: row;
+    }
+
+    .navegacion__enlace {
+        color: v.$blanco;
+        font-size: 2.4rem;
+
+        &:hover {
+            /* para que no se agregue un espacio entre etiquetas en la compilación*/
+            color: v.$amarillo;
+        }
+    }
+}
