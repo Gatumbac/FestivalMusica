@@ -15,6 +15,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: v.$negro;
+    font-size: 2rem;
 }
 p {
     font-size: 2rem;
@@ -50,5 +51,6 @@ img {
     display: block;
 }
 body > section {
+    /*Aplicar a todos los hijos del primer nivel despues de body que tenga la etiqueta section*/
     padding: 10rem 0
 }

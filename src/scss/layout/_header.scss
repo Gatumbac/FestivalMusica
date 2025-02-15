@@ -5,14 +5,14 @@
     background-color: v.$verde;
 
     .contenido__header {
+        padding: 2rem;
+
         @include m.tablet {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
-
-        padding: 2rem;
     }
 
     .header__titulo {

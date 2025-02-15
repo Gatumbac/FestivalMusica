@@ -325,6 +325,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: #000000;
+  font-size: 2rem;
 }
 
 p {
@@ -369,6 +370,7 @@ img {
 }
 
 body > section {
+  /*Aplicar a todos los hijos del primer nivel despues de body que tenga la etiqueta section*/
   padding: 10rem 0;
 }
 
@@ -418,4 +420,131 @@ body > section {
 .navegacion__principal .navegacion__enlace:hover {
   /* para que no se agregue un espacio entre etiquetas en la compilación*/
   color: #FDDA00;
+}
+
+.video {
+  position: relative;
+  min-height: 50rem;
+  max-height: 70rem0;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  background: linear-gradient(270deg, rgba(117, 47, 151, 0.6), rgba(56.7272727273, 22.7878787879, 73.2121212121, 0.9));
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+.video video {
+  display: block;
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .video video {
+    width: 100%;
+  }
+}
+
+.contenido-video {
+  z-index: 10;
+}
+.contenido-video h2 {
+  color: #FFFFFF;
+  font-size: 7rem;
+  margin: 0;
+}
+.contenido-video p {
+  background-color: #F53756;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.festival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+
+.contenido-festival {
+  margin-top: 5rem;
+}
+.contenido-festival h2 {
+  margin-bottom: 2rem;
+}
+.contenido-festival .fecha {
+  color: #4CB8B3;
+  font-weight: 700;
+}
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3, .lineup .dia {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.escenarios-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+
+.escenario {
+  padding-top: 5rem;
+}
+.escenario .nombre-escenario {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.calendario {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-amarillo {
+  background-color: #FDDA00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: rgb(255, 222.9743083004, 23.5);
+}
+
+.bg-verde {
+  background-color: #4CB8B3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: rgb(94.258, 191.242, 186.752);
 }
