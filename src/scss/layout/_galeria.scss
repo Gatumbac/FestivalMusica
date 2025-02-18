@@ -22,3 +22,58 @@
         }
     }
 }
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(v.$negro, 0.5);
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn ease-in 0.5s;
+
+    &.fade-out {
+        animation: fadeOut ease-in 0.5s;
+    }
+
+    img {
+        width: 90%;
+        max-width: 70rem;
+        object-fit: cover;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.btn-cerrar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-items: center;
+    color: v.$negro;
+    font-weight: 700;
+    cursor: pointer;
+}

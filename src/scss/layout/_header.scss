@@ -4,6 +4,16 @@
 .header {
     background-color: v.$verde;
 
+    @include m.tablet {
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+
     .contenido__header {
         padding: 2rem;
 
@@ -39,7 +49,8 @@
         color: v.$blanco;
         font-size: 2.4rem;
 
-        &:hover {
+        &:hover, 
+        &.marked {
             /* para que no se agregue un espacio entre etiquetas en la compilación*/
             color: v.$amarillo;
         }
